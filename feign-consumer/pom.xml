@@ -46,6 +46,7 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
+		 <!-- 设置feign -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
