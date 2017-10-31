@@ -8,6 +8,7 @@ public class User {
     private String name;
     private Integer age;
 
+    // 须有User的默认构造函数，否则Spring Cloud Feign根据JSON转User对象的时候会报错
     public User() {}
 
     public User(String name, Integer age) {

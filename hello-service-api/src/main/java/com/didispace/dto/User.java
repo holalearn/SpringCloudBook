@@ -1,8 +1,6 @@
 package com.didispace.dto;
 
-/**
- * Created by Administrator on 2016/9/16.
- */
+// 将服务和客户端所依赖的domian提取出来
 public class User {
 
     private String name;

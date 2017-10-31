@@ -8,13 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConsumerController {
 
+    // 将Feign服务注入
     @Autowired
     HelloService helloService;
+    // 注入重构的、遵守相同接口的服务实例
     @Autowired
     RefactorHelloService refactorHelloService;
 
     @RequestMapping(value = "/feign-consumer", method = RequestMethod.GET)
     public String helloConsumer() {
+        // 调用Feign接口
         return helloService.hello();
     }
 
@@ -28,6 +31,7 @@ public class ConsumerController {
         return sb.toString();
     }
 
+    // 调用重构之后的Feign客户端
     @RequestMapping(value = "/feign-consumer3", method = RequestMethod.GET)
     public String helloConsumer3() {
         StringBuilder sb = new StringBuilder();

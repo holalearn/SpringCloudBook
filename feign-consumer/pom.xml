@@ -46,12 +46,13 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-		 <!-- 引入feign -->
+		<!-- 引入feign -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 
+		<!-- 引入服务端、客户端接口约束 -->
 		<dependency>
 			<groupId>com.didispace</groupId>
 			<artifactId>hello-service-api</artifactId>
