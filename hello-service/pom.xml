@@ -51,6 +51,7 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<!-- 引入服务端、客户端共同定义的接口API -->
 		<dependency>
 			<groupId>com.didispace</groupId>
 			<artifactId>hello-service-api</artifactId>

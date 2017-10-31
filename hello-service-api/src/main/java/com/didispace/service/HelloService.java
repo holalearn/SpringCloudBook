@@ -3,6 +3,7 @@ package com.didispace.service;
 import com.didispace.dto.User;
 import org.springframework.web.bind.annotation.*;
 
+// 定义服务端与客户端共同使用的接口
 @RequestMapping("/refactor")
 public interface HelloService {
 
