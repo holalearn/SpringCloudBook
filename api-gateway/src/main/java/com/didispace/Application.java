@@ -7,6 +7,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.cloud.netflix.zuul.filters.discovery.PatternServiceRouteMapper;
 import org.springframework.context.annotation.Bean;
 
+// 步骤二：创建主类，使用@EnableZuulProxy注解开启Zuul的API网关服务
 @EnableZuulProxy
 @SpringCloudApplication
 public class Application {

@@ -25,11 +25,13 @@
 
 	<dependencies>
 
+		<!-- 步骤一：添加spring-cloud-starter-zuul -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
 
+		<!-- 添加spring-cloud-starter-eureka，提供服务中心，面向服务的路由 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
@@ -47,7 +49,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>

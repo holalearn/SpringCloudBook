@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 // 通过@FeignClient注解指定服务名来绑定服务
 // 服务项目位于hello-service中
+// 通过fallback属性配置服务的降级实现类
 @FeignClient(name="HELLO-SERVICE", fallback = HelloServiceFallback.class)
 public interface HelloService {
 

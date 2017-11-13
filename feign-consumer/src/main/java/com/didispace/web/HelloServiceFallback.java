@@ -5,9 +5,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/**
- * Created by Administrator on 2016/9/16.
- */
+// 服务降级
+// 需要为Feign客户端定义的接口提供一个实现类
 @Component
 public class HelloServiceFallback implements HelloService {
 
