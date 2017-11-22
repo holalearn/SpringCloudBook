@@ -37,6 +37,7 @@ public class AccessFilter extends ZuulFilter  {
     }
 
     @Override
+    // 过滤器的具体逻辑
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
@@ -46,7 +47,9 @@ public class AccessFilter extends ZuulFilter  {
         Object accessToken = request.getParameter("accessToken");
         if(accessToken == null) {
             log.warn("access token is empty");
+            // 过滤掉当前请求
             ctx.setSendZuulResponse(false);
+            // 返回401错误码
             ctx.setResponseStatusCode(401);
             return null;
         }

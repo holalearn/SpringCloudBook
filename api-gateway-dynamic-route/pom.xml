@@ -24,7 +24,7 @@
 	</properties>
 
 	<dependencies>
-
+		<!-- 步骤一：添加对于Zuul、eureka和config的依赖 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zuul</artifactId>
@@ -53,7 +53,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>

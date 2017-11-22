@@ -2,11 +2,7 @@ package com.didispace;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
- * @author 翟永超
- * @create 2016/12/11.
- * @blog http://blog.didispace.com
- */
+// 步骤四：创建过滤器配置类
 @ConfigurationProperties("zuul.filter")
 public class FilterConfiguration {
 

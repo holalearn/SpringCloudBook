@@ -24,7 +24,8 @@
 	</properties>
 
 	<dependencies>
-
+		<!-- 步骤一：添加对于Zuul、eureka和groovy的依赖 -->
+		<!-- 请求过滤是通过编码实现的，因此需要借助基于JVM实现的动态语言，如groovy -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zuul</artifactId>
@@ -52,7 +53,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>

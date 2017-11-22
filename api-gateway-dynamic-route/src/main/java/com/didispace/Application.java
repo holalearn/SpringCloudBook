@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 
 @EnableZuulProxy
 @SpringCloudApplication
+// 动态路由配置信息加载
 public class Application {
 
 	public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class Application {
 	}
 
 	@Bean
+	// 步骤三：使用@RefreshScope注解使Zuul的配置内容动态化
+	// 完成配置之后，还需要在Git仓库中增加网关配置文件api-gateway。properties，文件名取决于bootstrap.properties中spring.application.nam的属性值
+	// GET /routes接口可以获取当前网关的路由规则
+	// POST /refresh接口刷新配置信息
 	@RefreshScope
 	@ConfigurationProperties("zuul")
 	public ZuulProperties zuulProperties() {
